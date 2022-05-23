@@ -10,6 +10,7 @@ const userRouter = require("./routes/user");
 const actorRouter = require("./routes/actor");
 const movieRouter = require("./routes/movie");
 const reviewRouter = require("./routes/review");
+const adminRouter = require("./routes/admin");
 
 const app = express();
 app.use(cors());
@@ -20,6 +21,7 @@ app.use("/api/user", userRouter);
 app.use("/api/actor", actorRouter);
 app.use("/api/movie", movieRouter);
 app.use("/api/review", reviewRouter);
+app.use("/api/admin", adminRouter);
 
 app.use(errorHandler);
 app.listen(8000, () => {
