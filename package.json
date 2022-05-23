@@ -4,7 +4,7 @@
   "description": "Backend of the final project",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Hau Tran",
   "license": "ISC",
@@ -24,5 +24,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node" : "16.x",
+    "npm" : "8.x"
   }
 }
